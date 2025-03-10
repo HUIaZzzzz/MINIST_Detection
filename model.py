@@ -17,7 +17,7 @@ class Model(nn.Module):
             nn.ReLU(),
 
             nn.Flatten(),
-            nn.Linear(in_features=7*7*64,out_features=128),
+            nn.Linear(in_features=64*6*6,out_features=128),
             nn.ReLU(),
             nn.Linear(in_features=128,out_features=10),
             nn.Softmax(dim=1)
